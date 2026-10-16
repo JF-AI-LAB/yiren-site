@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联系我们 · Contact | 上海熠壬管理咨询有限公司</title>
+<meta name="description" content="联系上海熠壬管理咨询有限公司：电话 +86 183 6048 1306，邮箱 contact@shanghaiyiren.com，地址 上海市崇明区横沙乡富民支路58号。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="mark">熠壬</span>
+      <span>上海熠壬管理咨询有限公司<small>Shanghai Yiren Management Consulting Co., Ltd.</small></span>
+    </a>
+    <nav><ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="services.html">服务</a></li>
+      <li><a href="about.html">关于我们</a></li>
+      <li><a href="contact.html" class="on">联系我们</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="hero small">
+  <div class="wrap">
+    <h1>联系我们 · Contact</h1>
+    <p class="en">Tell us about your brand and markets. We reply within two business days.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>联系方式</h2>
+    <p class="sub">工作时间：周一至周五 9:00–18:00（北京时间）。</p>
+    <div class="contact">
+      <div class="card"><p class="lbl">电话 · Phone</p><a href="tel:+8618360481306">+86 183 6048 1306</a></div>
+      <div class="card"><p class="lbl">邮箱 · Email</p><a href="mailto:contact@shanghaiyiren.com">contact@shanghaiyiren.com</a></div>
+      <div class="card"><p class="lbl">地址 · Address</p><span>上海市崇明区横沙乡富民支路58号（上海横泰经济开发区）<br><span class="muted" style="font-size:13px">No. 58 Fumin Branch Road, Hengsha, Chongming, Shanghai 202150, China</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Message</p>
+    <h2>留言咨询</h2>
+    <p class="sub">填写以下信息，点击发送后会通过您的邮件客户端发送至 contact@shanghaiyiren.com。</p>
+    <form class="cf" id="cf">
+      <label>姓名 · Name<input name="name" required></label>
+      <label>公司 · Company<input name="company"></label>
+      <label>邮箱 · Email<input name="email" type="email" required></label>
+      <label>电话 · Phone<input name="phone"></label>
+      <label class="full">需求 · Message<textarea name="message" required placeholder="品牌、产品、目标市场与预算范围……"></textarea></label>
+      <button type="submit">发送 · Send</button>
+    </form>
+    <script>
+      document.getElementById('cf').addEventListener('submit',function(e){
+        e.preventDefault();var f=new FormData(this);
+        var s=encodeURIComponent('咨询：'+(f.get('company')||f.get('name')));
+        var b=encodeURIComponent('姓名：'+f.get('name')+'\n公司：'+(f.get('company')||'')+'\n邮箱：'+f.get('email')+'\n电话：'+(f.get('phone')||'')+'\n\n'+f.get('message'));
+        location.href='mailto:contact@shanghaiyiren.com?subject='+s+'&body='+b;
+      });
+    </script>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>上海熠壬管理咨询有限公司</h4>
+        <div>Shanghai Yiren Management Consulting Co., Ltd.</div>
+        <div>为中国出海品牌提供管理咨询、市场营销策划与海外数字广告投放。</div>
+      </div>
+      <div>
+        <h4>导航 · Site</h4>
+        <ul><li><a href="index.html">首页 · Home</a></li><li><a href="services.html">服务 · Services</a></li><li><a href="about.html">关于我们 · About</a></li><li><a href="contact.html">联系我们 · Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>联系 · Contact</h4>
+        <ul><li><a href="tel:+8618360481306">+86 183 6048 1306</a></li><li><a href="mailto:contact@shanghaiyiren.com">contact@shanghaiyiren.com</a></li><li>上海市崇明区横沙乡富民支路58号（上海横泰经济开发区）</li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      © 2026 上海熠壬管理咨询有限公司 · Shanghai Yiren Management Consulting Co., Ltd. All rights reserved.<br>
+      统一社会信用代码 91310230MA7BRHWQXD · 注册地址：上海市崇明区横沙乡富民支路58号（上海横泰经济开发区）
+    </div>
+  </div>
+</footer>
+</body>
+</html>
